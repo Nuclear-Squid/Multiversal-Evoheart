@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Multiversal EVOheart - 149</title>
+	</head>
+	<body>
+
+		<h1>149</h1>
+
+		<!-- Pour intégrer une image à partir de Google drive, le lien doit comporter → uc?id= ← -->
+		<img class="charportrait" src="https://drive.google.com/uc?id=1Xapl_LXMG9IcwP-RCT6hOzIBv0pcH8J5" alt="149" title="La 149ème clone d'une Neko girl, utilisé comme sujet de test dans un complexe mystérieux." />
+
+		<h3>Général</h3>
+		<div class="presentation">
+			<p>
+				Type : Cyborg<br/>
+				Classe : Melee / Support<br/>
+				Arme de base : Hyper sabre laser<br/>
+			</p>
+		</div>
+
+		<h3>Compétences</h3><br/>
+		<div class="skills">
+			<div> <!-- class="nova" -->
+				• <strong>Blade sweep</strong> :<br/>
+				↕ 3 ↔ 2<br/>
+				<p>149 frappe sur deux colonnes devant elle avec l'hyper sabre laser. Simple et efficace. [Cooldown de 5 secondes]</p>
+			</div>
+
+			<div class="nova">
+				• <strong>Her best of Hacking</strong> :<br/>
+				↕ 0 ↔ 0<br/>
+				<p>149 utilise ses petits talents de hackeuse pour générer des buffs de +29% de puissance et +15% de défense à elle et ses équipiers, buffs cumulable sur ceux dont la provenance est différente. [Cooldown de 16 secondes]</p>
+			</div>
+
+			<div>
+				• <strong>Stay away!</strong> :<br/>
+				↕ ~ ↔ &infin;<br/>
+				<p>149 active un hologramme et clique pour générer des pièges aux adversaires, en plus de générer de cases piégées en plein milieu du champ comme protection. [Cooldown de 24 secondes]</p>
+			</div>
+
+			<div class="nova">
+				• <strong>Feline instinct</strong> :<br/>
+				↕ 0 ↔ 0<br/>
+				<p>Ce skill permets à 149 d'esquiver et bloquer tous type d'attaques automatiquement pour 24 secondes. Elle bloque les attaques de melee et renvoie les attaques à distances (Sauf exception). Elle ne peut pas utiliser son bouclier pendant ce temps, et peut toujours continuer à utiliser ses autres skills. [Cooldown de 48 secondes]</p>
+			</div>
+		</div>
+		
+		<h3>Lignes de dialogue</h3>
+		<div class="voiceline">
+			<ul>
+				<li>...</li>
+			</ul>
+		</div>
+
+		<h3>Autres</h3>
+		<div class="trivia">
+			<p>
+				• 149 n'a pas de vrai nom propre à elle, vu que c'est un clone utilisé comme sujet de test.<br/><br/>
+				• La nature de 149 s'explique par le nombre abusif de composants cybernétique mis en place partout dans son corps. À ce point, c'est à se demander si elle est toujours vivante.<br/><br/>
+				• Sans exagérations, 149 serais une championne pour jouer le mort.<br/><br/>
+				• 149 n'a pas la capacité de parler, à cause de ce qui lui est arrivé. Malgré elle, elle a toujours ses <abbr title="Vue, ouïe, odorat, touché et goût.">5 sens</abbr>, et ce bien plus développé que la moyenne grâce à ses composants bioméchanique. Curieusement, elle semble être capable de communiquer par télépathie avec les autres robots et certains cyborgs.<br/><br/>
+				• Son sabre laser est différent de la moyenne. 149 l'a reçu pour résoudre certains énigme dans le complexe lors des tests.<br/><br/>
+				• Le sabre laser, appellé <u>Hyper Sabre laser</u>, est équippé d'un système de sécurité qui empêche 149 de se blesser, se mutiler et se suicider avec celui-ci.<br/><br/>
+				• Tous les clones précédent ont naturellement échoués. Le principe est que le clone B reçoit une amélioration qui permet de pallier au problème qui a mené le clone A à son échec. Je vous laisse en déduire de l'état de 149.
+			</p>
+		</div>
+
+		<hr/><h6>Page web créée par Xmega. Mise à jour non garantie.</h6>
+
+		<!-- Petits scripts Javascript? -->
+		<script></script>
+
+	</body>
+
+<style>
+:root {
+	/* C'est très utile ça pour changer les valeurs directement sans passer dans le code et trouver d'où ça vient. */
+	--skillcolor-default: #cccccc; /*gris*/
+	--skillcolor-nova: aqua;
+	--skillcolor-gamma: crimson;
+	--skillrow-count: 2;
+	--decalage-titre : 13.5%;
+	--decalage-h3 : 9.5%;
+	--decalage-body-div : 6%;
+	--decalage-body-text : 6%;
+}
+
+body {
+	color : white;
+	/*background: repeating-linear-gradient(90deg, #00ffff7c, #ff00ff7c, #5000ff7c); */
+	background: #1C1C33; /* Thème sombre! */
+	font-family: "Meiryo", "Book Antiqua", "Brush Script MT", "Gabriola";
+	font-size: 120%;
+}
+
+/* Contenu général du bordel */
+
+div.presentation > p , body > div {
+	padding-left : var(--decalage-body-div);
+}
+
+div.skills {
+	display: grid;
+	grid-template-columns: 30% 30%;
+	grid-template-rows: repeat(var(--skillrow-count), 1fr);
+	grid-column-gap: 5px;
+	grid-row-gap: 10px;
+}
+
+div.skills > div { border: 2mm ridge var(--skillcolor-default); border-radius: 0.25em; }
+div.skills > div.nova { border: 2mm ridge var(--skillcolor-nova); border-radius: 0.25em; }
+div.skills > div.gamma { border: 2mm ridge var(--skillcolor-gamma); border-radius: 0.25em; }
+
+div.skills > div > p {
+	padding: 0.5em 0.75em 0 0.75em; /* Centrer les textes dans les descriptions des skills. */
+	overflow-wrap: break-word;
+}
+
+div.skills > div > strong {
+	padding: 0.5em 0 0 1em;
+}
+
+div.trivia > p, div.voiceline > ul > li {
+	width: 50%;
+	overflow-wrap: break-word; /* Break word permet de forcer le retour à la ligne! Hahahahahaha */
+}
+
+/* === */
+
+ul {
+	padding-left: 7%;
+	color : white;
+	font-family : "Book Antiqua", "Brush Script MT";
+	font-size : 90%;
+	font-style: italic;
+}
+li::before, li::after {	content : '"'; }
+
+p {
+	padding-left: var(--decalage-body-text);
+	/* width: 735px; */
+	color : white;
+	font-family : "Book Antiqua", "Brush Script MT";
+	font-size : 90%;
+}
+
+h1 {
+	padding-left : var(--decalage-titre);
+	font-family: "Brussels";/*Harlow Solid Italic, Mistral;*/
+	color: #ffffff;
+}
+
+h3 {
+	padding-left: var(--decalage-h3);
+}
+
+h6 {
+	padding-left: 10%;
+}
+
+hr {
+	width: 90%;
+}
+
+/* Liens vers d'autres trucs. */
+ul.navbar {
+	list-style-type: none; /* Cette ligne supprime les points */
+	padding: 0; /* marging et padding décalent la liste */
+	margin: 0;
+	position: absolute;
+	top: 2em;
+	left: 1em;
+	width: 9em;
+}
+
+ul.navbar li {
+	background: #00ffff50;
+	margin: 0.5em 0;
+	padding: 0.3em;
+	border-right: 1em solid blue;
+}
+
+ul.navbar a { /* Retire le soulignement des liens dans la liste */
+	text-decoration: none
+}
+
+a:link {
+	background: linear-gradient(to bottom, #FFFF00 28%, #3DA6A6 89%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; /* couleur des liens pas encore visités */
+}
+a:visited {
+	background: linear-gradient(to bottom, #FFFF50 23%, #05E858 79%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; /* couleur des liens visités */
+}
+
+img.charportrait {
+	position: fixed; 
+	top: 2em;
+	right: 2.5%; /* Affichage responsive! */
+	max-width: 30%;
+	max-height: 70%;
+	text-align: center;
+	vertical-align: middle;
+	border: #cccccc;
+	border-style: double;
+	/* border-color: #cccccc #00ffff; */
+	border-width: medium;
+	border-radius: 1.25em;
+}
+
+abbr {
+	cursor: help;
+	color: #FFAAFF;
+}
+
+</style>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Multiversal EVOheart - Typhoon</title>
+	</head>
+	<body>
+
+		<h1>Typhoon</h1>
+
+		<!-- Pour intégrer une image à partir de Google drive, le lien doit comporter → uc?id= ← -->
+		<img class="charportrait" src="https://drive.google.com/uc?id=11Xmjo5G-sldMwvc4Xb_BNNFD0m3fo8EX" alt="Typhoon" title="À l'aide des plans volés aux Admins, le Dieu du Chaos a tenté de créer un deuxième robot aussi puissant que Saberlike, sans pour autant être un Admin." />
+
+		<h3>Général</h3>
+		<div class="presentation">
+			<p>
+				Type : Magic robot<br/>
+				Classe : Melee<br/>
+				Arme de base : Forbidden blade<br/>
+			</p>
+		</div>
+
+		<h3>Compétences</h3><br/>
+		<div class="skills">
+			<div class="nova">
+				• <strong>God of Chaos blessing</strong> :<br/>
+				↕ x ↔ y<br/>
+				<p>Texte. [Cooldown de X secondes]</p>
+			</div>
+		
+			<div> <!-- class="nova" -->
+				• <strong>Double hit</strong> :<br/>
+				↕ 1 ↔ 2<br/>
+				<p>Tranche une fois devant, le second coup frappe sur deux carrés. [Cooldown de 4 secondes]</p>
+			</div>
+
+			<div> <!-- class="nova" -->
+				• <strong>Charged slash</strong> :<br/>
+				↕ x ↔ y<br/>
+				<p>Texte. [Cooldown de X secondes]</p>
+			</div>
+
+			<div> <!-- class="nova" -->
+				• <strong>Skill 3</strong> :<br/>
+				↕ x ↔ y<br/>
+				<p>Texte. [Cooldown de X secondes]</p>
+			</div>
+			
+			<div> <!-- class="nova" -->
+				• <strong>Skill 3</strong> :<br/>
+				↕ x ↔ y<br/>
+				<p>Texte. [Cooldown de X secondes]</p>
+			</div>
+			
+			<div> <!-- class="nova" -->
+				• <strong>Skill 3</strong> :<br/>
+				↕ x ↔ y<br/>
+				<p>Texte. [Cooldown de X secondes]</p>
+			</div>
+			
+			<div class="gamma">
+				• <strong>Skill 3</strong> :<br/>
+				↕ x ↔ y<br/>
+				<p>Texte. [Cooldown de X secondes]</p>
+			</div>
+		</div>
+		
+		<h3>Lignes de dialogue</h3>
+		<div class="voiceline">
+			<ul>
+				<li>Texte.</li>
+				<li>Texte.</li>
+				<li><abbr title="Vs Creepsy | Vs Creepsy (Saber laser)">&#8505;</abbr> Je suis impressionné, Creepsy. Même si tu es insupportable, tu réussi à triompher des Dieux.</li>
+				<li><abbr title="Vs Saberlike (1)">&#8505;</abbr> Finissons-en, Saberlike.</li>
+				<li><abbr title="Vs Saberlike (2)">&#8505;</abbr> Tu es un adversaire formidable, Saberlike. Montre-moi de quoi tu es capable.</li>
+				<li><abbr title="Vs Saberlike (3)">&#8505;</abbr> Texte.</li>
+				<li><abbr title="Vs Corrupbert">&#8505;</abbr> Toi... Tu es encore venu me mettre des bâtons dans les roues?</li>
+				<li><abbr title="Vs Squigly">&#8505;</abbr> On ne s'est jamais vu, demoiselle. Est-ce que Maître était déjà venu dans votre univers?</li>
+				<li><abbr title="Vs Fasma">&#8505;</abbr> Très bien... Ne le prend pas trop personnellement, Fasma.</li>
+				<li><abbr title="Vs 149">&#8505;</abbr> Hahaha... Tu es à moi maintenant. Qui est-ce qui viendra te sauver?</li>
+				<li><abbr title="Vs INDIGO Aylea">&#8505;</abbr> Texte.</li>
+				<li><abbr title="">&#8505;</abbr></li>
+			</ul>
+		</div>
+
+		<h3>Autres</h3>
+		<div class="trivia">
+			<p>
+				• Aucune informations à préciser ici.<br/><br/>
+				• [...]<br/>
+			</p>
+		</div>
+
+		<hr/><h6>Page web créée par Xmega. Mise à jour non garantie.</h6>
+
+		<!-- Petits scripts Javascript? -->
+		<script></script>
+
+	</body>
+
+<style>
+:root {
+	/* C'est très utile ça pour changer les valeurs directement sans passer dans le code et trouver d'où ça vient. */
+	--skillcolor-default: #cccccc; /*gris*/
+	--skillcolor-nova: aqua;
+	--skillcolor-gamma: crimson;
+	--skillrow-count: 2;
+	--decalage-titre : 13.5%;
+	--decalage-h3 : 9.5%;
+	--decalage-body-div : 6%;
+	--decalage-body-text : 6%;
+}
+
+body {
+	color : white;
+	/*background: repeating-linear-gradient(90deg, #00ffff7c, #ff00ff7c, #5000ff7c); */
+	background: #1C1C33; /* Thème sombre! */
+	font-family: "Meiryo", "Book Antiqua", "Brush Script MT", "Gabriola";
+	font-size: 120%;
+}
+
+/* Contenu général du bordel */
+
+div.presentation > p , body > div {
+	padding-left : var(--decalage-body-div);
+}
+
+div.skills {
+	display: grid;
+	grid-template-columns: 30% 30%;
+	grid-template-rows: repeat(var(--skillrow-count), 1fr);
+	grid-column-gap: 5px;
+	grid-row-gap: 10px;
+}
+
+div.skills > div { border: 2mm ridge var(--skillcolor-default); border-radius: 0.25em; }
+div.skills > div.nova { border: 2mm ridge var(--skillcolor-nova); border-radius: 0.25em; }
+div.skills > div.gamma { border: 2mm ridge var(--skillcolor-gamma); border-radius: 0.25em; }
+
+div.skills > div > p {
+	padding: 0.5em 0.75em 0 0.75em; /* Centrer les textes dans les descriptions des skills. */
+	overflow-wrap: break-word;
+}
+
+div.skills > div > strong {
+	padding: 0.5em 0 0 1em;
+}
+
+div.trivia > p, div.voiceline > ul > li {
+	width: 50%;
+	overflow-wrap: break-word; /* Break word permet de forcer le retour à la ligne! Hahahahahaha */
+}
+
+/* === */
+
+ul {
+	padding-left: 7%;
+	color : white;
+	font-family : "Book Antiqua", "Brush Script MT";
+	font-size : 90%;
+	font-style: italic;
+}
+li::before, li::after {	content : '"'; }
+
+p {
+	padding-left: var(--decalage-body-text);
+	/* width: 735px; */
+	color : white;
+	font-family : "Book Antiqua", "Brush Script MT";
+	font-size : 90%;
+}
+
+h1 {
+	padding-left : var(--decalage-titre);
+	font-family: "Brussels";/*Harlow Solid Italic, Mistral;*/
+	color: #ffffff;
+}
+
+h3 {
+	padding-left: var(--decalage-h3);
+}
+
+h6 {
+	padding-left: 10%;
+}
+
+hr {
+	width: 90%;
+}
+
+/* Liens vers d'autres trucs. */
+ul.navbar {
+	list-style-type: none; /* Cette ligne supprime les points */
+	padding: 0; /* marging et padding décalent la liste */
+	margin: 0;
+	position: absolute;
+	top: 2em;
+	left: 1em;
+	width: 9em;
+}
+
+ul.navbar li {
+	background: #00ffff50;
+	margin: 0.5em 0;
+	padding: 0.3em;
+	border-right: 1em solid blue;
+}
+
+ul.navbar a { /* Retire le soulignement des liens dans la liste */
+	text-decoration: none;
+}
+
+a:link {
+	background: linear-gradient(to bottom, #FFFF00 28%, #3DA6A6 89%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; /* couleur des liens pas encore visités */
+}
+a:visited {
+	background: linear-gradient(to bottom, #FFFF50 23%, #05E858 79%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; /* couleur des liens visités */
+}
+
+img.charportrait {
+	position: fixed; 
+	top: 2em;
+	right: 2.5%; /* Affichage responsive! */
+	max-width: 30%;
+	max-height: 70%;
+	text-align: center;
+	vertical-align: middle;
+	border: #cccccc;
+	border-style: double;
+	/* border-color: #cccccc #00ffff; */
+	border-width: medium;
+	border-radius: 1.25em;
+}
+
+abbr {
+	cursor: help;
+	color: #FFAAFF;
+}
+
+</style>
+</html>

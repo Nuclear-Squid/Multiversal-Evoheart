@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Multiversal EVOheart - Squigly</title>
+	</head>
+	<body>
+
+		<h1>Squigly</h1>
+
+		<!-- Pour intégrer une image à partir de Google drive, le lien doit comporter → uc?id= ← -->
+		<img class="charportrait" src="https://static.wikia.nocookie.net/skullgirls/images/5/56/Squigly_action_shot_SGE.png/revision/latest?cb=20220411021622" alt="Squigly" title="Mort-vivante venant du monde des Skullgirls." />
+
+		<h3>Général</h3>
+		<div class="presentation">
+			<p>
+				Type : Mort-vivant<br/>
+				Classe : Melee & Support<br/>
+				Arme de base : Parasite Léviathan<br/>
+			</p>
+		</div>
+
+		<h3>Compétences</h3><br/>
+		<div class="skills">
+			<div> <!-- class="nova" -->
+				• <strong>Cremation</strong> :<br/>
+				↕ 1 ↔ 2<br/>
+				<p>Le parasite Léviathan crache une vaste quantité de flamme sur les deux carrés devant. Attaque basé sur l'élément de feu. [Cooldown de 4 secondes]</p>
+			</div>
+
+			<div> <!-- class="nova" -->
+				• <strong>Quintuple Combo</strong> :<br/>
+				↕ 1 ↔ 1<br/>
+				<p>Squigly utilise un combo de trois coups d'affilé visant le carré devant elle. [Cooldown de 6 secondes]</p>
+			</div>
+
+			<div> <!-- class="nova" -->
+				• <strong>Squigly battle Opera</strong> :<br/>
+				↕ 1 ↔ 3<br/>
+				<p>Squigly lance un projectile sphérique qui dure pour deux secondes, et le lance devant elle. Le projectile peut taper plusieurs frois, sans pour autant donner un effet de recul. [Cooldown de 3 secondes]</p>
+			</div>
+			
+			<div> <!-- class="nova" -->
+				• <strong>Dragon Strike</strong> :<br/> <!-- #ff0000 #66ff33 --> <!-- #999966 #c2c2a3 --> <!-- #cc6699 #df9fbf -->
+				↕ 1 ↔ 3<br/>
+				<p>Léviathan attaque sur une portée de 3 carrés sur la ligne de Squigly. L'attaque peut dissiper certains projectiles et l'attaque est plus puissante à la tête du parasite. Squigly a un petit effet de <abbr title="Effet de flotte, Squigly ne réagit pas aux carrés infectés.">lévitation</abbr> au début. [Cooldown de 9 secondes]</p>
+			</div>
+			
+			<div>
+				• <strong>Draugen punch</strong> :<br/>
+				↕ 1 ↔ 2<br/>
+				<p>Squigly performe un uppercut avec Léviathan, un puissant coup portant sur les deux prochains carrés devant. [Cooldown de 8 secondes]</p>
+			</div>
+			
+			<div> <!-- class="nova" -->
+				• <strong>Ashes to Ashes</strong> :<br/>
+				↕ 3 ↔ 3<br/>
+				<p>Le parasite Léviathan crache deux boules de feux allant sur les deux lignes autour de Squigly, puis une quantité de flammes sur la ligne où Squigly se situe. [Cooldown de 6 secondes]</p>
+			</div>
+			
+			<div> <!-- class="nova" -->
+				• <strong>Tremolo Seria</strong> :<br/>
+				↕ 1 ↔ 4<br/>
+				<p>Depuis le sol, Léviathan attaque sur une portée de 4 carrés sur la ligne de Squigly, tout en émergeant de chacun. L'attaque ne peut être qu'esquivée. [Cooldown de 3 secondes]</p>
+			</div>
+			
+			<!--<div> 
+				• <strong>Rise from your grave</strong> :<br/>
+				↕ 1 ↔ 3<br/>
+				<p>Texte. [Cooldown de 7 secondes]</p>
+			</div>-->
+			
+			<div class="gamma">
+				• <strong>Inferno of Leviathan</strong> :<br/>
+				↕ 3 ↔ 3<br/>
+				<p>Ayant chargé préalablement et instantanément une grande quantité d'énergie, Léviathan lâche un énorme projectile magique qui flottera vers le milieu de la zone ennemi et explode avec une portée de ↕3↔3 depuis le point de l'impact. [Cooldown de 15 secondes]</p>
+			</div>
+		</div>
+
+		<h3>Autres</h3>
+		<div class="trivia">
+			<p>
+				• Squigly est la première perso cross-over de tous pendant la conception du jeu.<br/><br/>
+				• Squigly est la seule à avoir plusieurs attaques différentes juste avec son arme de base.<br/><br/>
+				• Je n'ai jamais joué à Skullgirls. j'ai eu l'aide du codeur, lui qui joue au jeu, pour écrire le moveset, et quelques vidéos de démonstrations.<br/>
+			</p>
+		</div>
+
+		<hr/><h6>Page web créée par Xmega. Mise à jour non garantie.</h6>
+
+		<!-- Petits scripts Javascript? -->
+		<script></script>
+
+	</body>
+
+<style>
+:root {
+	/* C'est très utile ça pour changer les valeurs directement sans passer dans le code et trouver d'où ça vient. */
+	--skillcolor-default: #cccccc; /*gris*/
+	--skillcolor-nova: aqua;
+	--skillcolor-gamma: crimson;
+	--skillrow-count: 4; /* 5 */
+}
+
+body {
+	padding-left : 5em;
+	color : white;
+	/*background: repeating-linear-gradient(90deg, #00ffff7c, #ff00ff7c, #5000ff7c); */
+	background: #311b26; /* Thème sombre! */
+	font-family: "Meiryo", "Book Antiqua", "Brush Script MT", "Gabriola";
+	font-size: 120%;
+}
+
+/* Contenu général du bordel */
+div.skills {
+	display: grid;
+	grid-template-columns: 30% 30%;
+	grid-template-rows: repeat(var(--skillrow-count), 1fr);
+	grid-column-gap: 5px;
+	grid-row-gap: 10px;
+}
+
+div.skills > div { border: 2mm ridge var(--skillcolor-default); border-radius: 0.25em; }
+div.skills > div.nova { border: 2mm ridge var(--skillcolor-nova); border-radius: 0.25em; }
+div.skills > div.gamma { border: 2mm ridge var(--skillcolor-gamma); border-radius: 0.25em; }
+
+div.skills > div > p {
+	padding: 0.5em 0.75em 0 0.75em; /* Centrer les textes dans les descriptions des skills. */
+}
+
+div.skills > div > strong {
+	padding: 0.5em 0 0 1em;
+}
+
+div.trivia > p {
+	width: 50%;
+}
+
+/* === */
+
+p {
+	padding-left : 5%;
+	/* width: 735px; */
+	color : white;
+	font-family : "Book Antiqua", "Brush Script MT";
+	font-size : 90%;
+}
+
+h1 {
+	padding-left : 3em;
+	font-family: "Brussels";/*Harlow Solid Italic, Mistral;*/
+	color: #ffffff;
+}
+
+h3 {
+	padding-left : 2.35em;
+}
+
+/* Liens vers d'autres trucs. */
+ul.navbar {
+	list-style-type: none; /* Cette ligne supprime les points */
+	padding: 0; /* marging et padding décalent la liste */
+	margin: 0;
+	position: absolute;
+	top: 2em;
+	left: 1em;
+	width: 9em;
+}
+
+ul.navbar li {
+	background: #00ffff50;
+	margin: 0.5em 0;
+	padding: 0.3em;
+	border-right: 1em solid blue;
+}
+
+ul.navbar a { /* Retire le soulignement des liens dans la liste */
+	text-decoration: none
+}
+
+a:link {
+	background: linear-gradient(to bottom, #FFFF00 28%, #3DA6A6 89%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; /* couleur des liens pas encore visités */
+}
+a:visited {
+	background: linear-gradient(to bottom, #FFFF50 23%, #05E858 79%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; /* couleur des liens visités */
+}
+
+
+/* Maintenant, l'image! */
+/*La balise de l'image dans le fichier html doit avoir la class "charportrait" (Nom custom) */
+
+img.charportrait {
+	position: fixed; 
+	top: 2em;
+	left: 70%; /* Affichage responsive! */
+	max-width: 53%;
+	max-height: 53%;
+	border: #cccccc;
+	border-style: double;
+	/* border-color: #cccccc #00ffff; */
+	border-width: medium;
+	border-radius: 1.25em;
+}
+</style>
+</html>
